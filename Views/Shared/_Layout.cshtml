@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Coursaty.styles.css" asp-append-version="true" />
+
+    <link rel="stylesheet" id="theme-style" href="~/css/light-theme.css">
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
 </head>
 <body>
     <header>
@@ -35,6 +40,8 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Courses" asp-action="ShowSearchForm">Search</a>
                         </li>
+
+                        <button id="theme-switcher" class="theme-switcher">Switch Theme</button>
 
                     </ul>
                     <partial name="_LoginPartial" />
